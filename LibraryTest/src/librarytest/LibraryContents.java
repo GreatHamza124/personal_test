@@ -13,4 +13,12 @@ import java.util.ArrayList;
 public class LibraryContents {
 
     ArrayList<Book> shelf = new ArrayList();
+    
+    public LibraryContents(){
+        
+    }
+    
+    public void addBook(Book book){
+        shelf.add(book);
+    }
 }
