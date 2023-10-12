@@ -50,8 +50,5 @@ public class ShelfContent {
         return display;
     }
     
-    public String message(){
-        String message = "Good Afternoon";
-        return message;
-    }
+
 }
