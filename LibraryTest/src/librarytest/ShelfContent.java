@@ -37,10 +37,10 @@ public class ShelfContent {
     public String displayBook(String title){
         boolean bookFound = false;
         String display = "";
-        for(int i = 0; i > shelf.size();i++){
+        for(int i = 0; i < shelf.size();i++){
             if (shelf.get(i).getTitle().equalsIgnoreCase(title)){
                 display = "Title: " + shelf.get(i).getTitle() + "\nPage: "
-                        + shelf.get(i).getPage() + "\n Author: " + shelf.get(i).getAuthor();
+                        + shelf.get(i).getPage() + "\nAuthor: " + shelf.get(i).getAuthor();
                 bookFound = true;
             }
         }

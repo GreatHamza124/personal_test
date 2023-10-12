@@ -10,15 +10,7 @@ package librarytest;
  */
 public class LibraryInterface {
     public static void main(String[] args) {
-        ShelfContent lib = new ShelfContent();
-        System.out.println("Welcome to the Library");
-        Book mybook = new Book();
-        mybook.setAuthor("Obama");
-        mybook.setPage(230);
-        mybook.setTitle("My Life");
-        lib.addBook(mybook);
-        System.out.println("Good Morning");
-        System.out.println("Good Afternoon");
+
     }
     
 }
