@@ -16,6 +16,13 @@ public class Book {
     public Book(){
         
     }
+    
+    public Book(String title, int page, String author){
+        setTitle(title);
+        setPage(page);
+        setAuthor(author);
+        
+    }
 
     public String getAuthor() {
         return author;
