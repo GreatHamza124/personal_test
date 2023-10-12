@@ -16,7 +16,7 @@ public class LibraryInterface {
         ArrayList<ShelfContent> library = new ArrayList();
         LibraryCart libcart = new LibraryCart();
         Scanner scan = new Scanner(System.in);
-        int input = 1;
+        int input = 0;
         
         Book book1 = new Book("Life of Obama",340,"Obama");
         Book book2 = new Book("How to make Hamburger",3240,"Mr Crabs");
@@ -56,6 +56,12 @@ public class LibraryInterface {
         libcart.addtoCart(book4);
         libcart.addtoCart(book11);
         libcart.addtoCart(book7);
+        
+        library.add(shelf1);
+        library.add(shelf2);
+        library.add(shelf3);
+        library.add(shelf4);
+        library.add(shelf5);
         
         System.out.println(libcart.displayCart());
         
