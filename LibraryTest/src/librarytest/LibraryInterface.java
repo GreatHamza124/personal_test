@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class LibraryInterface {
     public static void main(String[] args) {
         ArrayList<ShelfContent> library = new ArrayList();
+        LibraryCart libcart = new LibraryCart();
         
         Book book1 = new Book("Life of Obama",340,"Obama");
         Book book2 = new Book("How to make Hamburger",3240,"Mr Crabs");
@@ -46,6 +47,13 @@ public class LibraryInterface {
         shelf5.addBook(book3);
         shelf5.addBook(book4);
         shelf5.addBook(book7);
+        
+        
+        System.out.println(shelf1.displayBooks());
+        libcart.addtoCart(book9);
+        libcart.addtoCart(book3);
+        
+        System.out.println(libcart.displayCart());
         
         
         

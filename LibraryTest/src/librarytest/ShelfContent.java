@@ -39,8 +39,7 @@ public class ShelfContent {
         String display = "";
         for(int i = 0; i < shelf.size();i++){
             if (shelf.get(i).getTitle().equalsIgnoreCase(title)){
-                display = "Title: " + shelf.get(i).getTitle() + "\nPage: "
-                        + shelf.get(i).getPage() + "\nAuthor: " + shelf.get(i).getAuthor();
+                display = shelf.get(i).toString();
                 bookFound = true;
             }
         }
@@ -48,6 +47,14 @@ public class ShelfContent {
             display = "Book not found";
         }
         return display;
+    }
+    
+    public String displayBooks(){
+        String displaybook = "";
+        for (int i = 0; i <= shelf.size(); i++){
+            displaybook = shelf.get(i).toString() + "\n\n";
+        }
+        return displaybook;
     }
     
 
