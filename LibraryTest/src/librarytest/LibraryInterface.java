@@ -51,6 +51,14 @@ public class LibraryInterface {
         shelf5.addBook(book4);
         shelf5.addBook(book7);
         
+        System.out.println(shelf5.displayBooks());
+        libcart.addtoCart(book1);
+        libcart.addtoCart(book4);
+        libcart.addtoCart(book11);
+        libcart.addtoCart(book7);
+        
+        System.out.println(libcart.displayCart());
+        
         while(input != -1){
             System.out.print("Which shelf would you like to see sir:");
             input = scan.nextInt();

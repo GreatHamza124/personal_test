@@ -49,6 +49,6 @@ public class Book {
     }
     
     public String toString(){
-        return "Title: " + getTitle() + "\nPage: " + getPage() + "\nAuthor" + getAuthor();
+        return "Title: " + getTitle() + "\nPage: " + getPage() + "\nAuthor: " + getAuthor();
     }
 }

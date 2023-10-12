@@ -50,9 +50,9 @@ public class ShelfContent {
     }
     
     public String displayBooks(){
-        String displaybook = "";
-        for (int i = 0; i <= shelf.size(); i++){
-            displaybook = shelf.get(i).toString() + "\n\n";
+        String displaybook = "============ Shelf ============\n";
+        for (int i = 0; i < shelf.size(); i++){
+            displaybook += (i+1) + ") " + shelf.get(i).toString() + "\n\n";
         }
         return displaybook;
     }

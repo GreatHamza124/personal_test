@@ -36,9 +36,9 @@ public class LibraryCart {
     }
     
     public String displayCart(){
-        String displayCart = "";
+        String displayCart = "============ Cart ============\n";
         for (int i = 0; i < cart.shelf.size();i++){
-            displayCart = cart.shelf.get(i).toString() + "\n\n";
+            displayCart += (i+1) + ") " + cart.shelf.get(i).toString() + "\n\n";
         }
         return displayCart;
     }
