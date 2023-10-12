@@ -18,6 +18,7 @@ public class CustomerInterface {
         mybook.setTitle("My Life");
         lib.addBook(mybook);
         System.out.println("Good Morning");
+        System.out.println("Good Afternoon");
     }
     
 }
