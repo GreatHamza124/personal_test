@@ -49,4 +49,9 @@ public class LibraryContents {
         }
         return display;
     }
+    
+    public String message(){
+        String message = "Good Afternoon";
+        return message;
+    }
 }
