@@ -5,6 +5,7 @@
 package librarytest;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -14,6 +15,8 @@ public class LibraryInterface {
     public static void main(String[] args) {
         ArrayList<ShelfContent> library = new ArrayList();
         LibraryCart libcart = new LibraryCart();
+        Scanner scan = new Scanner(System.in);
+        int input = 0;
         
         Book book1 = new Book("Life of Obama",340,"Obama");
         Book book2 = new Book("How to make Hamburger",3240,"Mr Crabs");
@@ -48,16 +51,33 @@ public class LibraryInterface {
         shelf5.addBook(book4);
         shelf5.addBook(book7);
         
-        
-        System.out.println(shelf1.displayBooks());
-        libcart.addtoCart(book9);
-        libcart.addtoCart(book3);
-        
-        System.out.println(libcart.displayCart());
-        
-        
-        
-
+        while(input != -1){
+            System.out.print("Which shelf would you like to see sir:");
+            input = scan.nextInt();
+            switch(input){
+                case -1:
+                    break;
+                case 1:
+                    System.out.println("1");
+                    break;
+                case 2:
+                    System.out.println("2");
+                    break;
+                case 3:
+                    System.out.println("3");
+                    break;
+                case 4:
+                    System.out.println("4");
+                    break;
+                case 5:
+                    System.out.println("5");
+                    break;
+                default:
+                    System.out.println("Wrong input");
+            }
+            
+            
+        }
     }
-    
+
 }
