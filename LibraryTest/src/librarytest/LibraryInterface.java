@@ -16,7 +16,7 @@ public class LibraryInterface {
         ArrayList<ShelfContent> library = new ArrayList();
         LibraryCart libcart = new LibraryCart();
         Scanner scan = new Scanner(System.in);
-        int input = 0;
+        int input = 1;
         
         Book book1 = new Book("Life of Obama",340,"Obama");
         Book book2 = new Book("How to make Hamburger",3240,"Mr Crabs");
