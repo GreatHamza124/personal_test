@@ -10,11 +10,11 @@ import java.util.ArrayList;
  *
  * @author Hamza
  */
-public class LibraryContents {
+public class ShelfContent {
 
     ArrayList<Book> shelf = new ArrayList();
     
-    public LibraryContents(){
+    public ShelfContent(){
         
     }
     

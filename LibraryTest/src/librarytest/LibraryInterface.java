@@ -8,9 +8,9 @@ package librarytest;
  *
  * @author Hamza
  */
-public class CustomerInterface {
+public class LibraryInterface {
     public static void main(String[] args) {
-        LibraryContents lib = new LibraryContents();
+        ShelfContent lib = new ShelfContent();
         System.out.println("Welcome to the Library");
         Book mybook = new Book();
         mybook.setAuthor("Obama");
